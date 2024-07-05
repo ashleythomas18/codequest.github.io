@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(131, 130, 128);
+    padding: 20px 0;
+    color: aliceblue;
+   
+}
+.options{
+    display: flex;
+}
+.option{
+    margin: 0 20px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    color: black;
+}
+.option ::before{
+    content: '';
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.3s;
+}
+.option:hover::before{
+    width: 100%;
+}
+.logo{
+    color: black;
+    font-size: 24px;
+}
+.button{
+    color: black;
+    border: 1.2px solid transparent;
+    font-size: 18px;
+    border: solid 2px;
+    padding: 5px 5px 5px 5px;
+}
+
+.introduction{
+    margin-bottom: 20px;
+    margin-right: 1000px;
+    margin-left: 120px;
+    margin-top: 100px;
+    font-size: 30px;
+    color: black;
+}
+.about{
+    color: black;
+    margin-top: 40px;
+    margin-left: 120px;
+    
+}
+.about-head{
+    display: flex;
+}
+
+.about-head .about1{
+    border: solid 2px;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+}
+
+.about-head .about2{
+    
+    padding: 5px 5px 5px 5px;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    
+}
+.about-head .about2:hover{
+    border: solid 2px;
+    border-radius: 3px;
+}
+.about-head .about1:hover{
+    border: solid 2px;
+    border-radius: 3px;
+    background-color: grey;
+}
+
+.image{
+    /*margin-left: 500px;
+    margin-bottom: 1000px;*/
+    align-items: center;
+    margin-right: 100px;
+    position: relative;
+    right: 400px;
+    top: 80px;
+}
+
+img {
+    height: 500px;
+    
+} 
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+.right {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.footer{
+    margin-top: 100px;
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.download{
+    position: absolute;
+    left: -150px;
+    top: 150px;
+    font-size: 40px;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    align-content: center;
+    text-align: center;
+
+}
